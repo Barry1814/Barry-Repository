@@ -1,0 +1,143 @@
+<html>  
+<head> <title>Lab 4</title> 
+
+<style>
+// CSS STYLING OF VARIUS ELEMENTS GOES IN THIS <style> SECTION 
+// ******************
+body {
+      text-align: center;
+      margin-top: 75px;
+}
+ h2.title {
+      color: blue;
+}
+.button { 
+    background-color: #F28900;
+    width: 60px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
+    font-weight: bolder;
+    text-align: center;
+    border-bottom-color: #444444;
+    border-right-color: #444444;
+}
+
+#forLoops {
+     background-color: #FFDD99;
+     width: 75%; 
+     margin: 5%;
+     border-radius: 20px; 
+     -moz-border-radius: 20px; 
+     -webkit-border-radius: 20px; 
+     border: 4px solid #0A81F7;
+     fill: #FFDD99;
+     text-align: center;
+     padding-bottom: 25px;
+}
+
+#whileLoops {
+      background-color: #A7EAF2;
+      width: 75%;
+      margin: 5%;
+      border-radius: 20px; 
+     -moz-border-radius: 20px; 
+     -webkit-border-radius: 20px; 
+     border: 4px solid #001F99; 
+     text-align: center; 
+     padding-bottom: 25px;
+}
+
+#apricots img {
+    width: 55px;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+#cherry img {
+    width: 55px;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+}
+</style>
+
+  <script>
+ // Need to write it here, before it is called!   
+  function drawloop1(){ 
+        //create a number "num"
+        num = document.getElementById("quantity").value;
+        //create text to put num in
+        text = '';
+        //put num in text
+        var i;
+        for (i = 0; i < num; i++) {
+            text += '<img src="apricot.png">';
+        }
+        //tell where apricots is
+        let element = document.getElementById("apricots");
+        //move to apricots
+        element.innerHTML = text;
+     }
+  </script>   
+
+  <script>
+ // Need to write it here, before it is called!   
+  function drawloop2(){ 
+      // create num2
+      num2 = document.getElementById("quantity2").value;
+      //create text2 to put num2 in
+      text2 = '';
+      //put num2 in text2
+      var i = 0; 
+      while (i < num2) {
+         text2 += '<img src="cherry.png">';
+      i++;
+      }
+     // tell where cherry is
+     let element2 = document.getElementById("cherry")
+     // move to cherry
+     element2.innerHTML = text2
+     }
+  </script> 
+  
+</head> 
+ 
+<body  > 
+<h2>
+  
+<div id="forLoops">   <!-- for loops -->
+<h2 class="title"> Experimenting with a for loop </h2>
+   <div id="id1">
+    <p>How many more apricots do you want to see? <br></p>
+    <div id="apricots">
+
+    </div>
+</div>
+
+<label for="quantity">Quantity (between 1 and 10):</label>
+<input type="range" id="quantity" name="quantity" min="1" max="10" value="1">
+
+<input type="button" id="button1" class="button" value= " Draw! 
+" onClick='drawloop1();'>
+</div>
+
+<div id="whileLoops">   <!-- while loops -->
+<h2 class="title">Experimenting with a while loop</h2>
+   <div id="id2"> 
+   <p>How many more cherries do you want to see? <br></p>
+   <div id="cherry">
+
+   </div>
+</div>
+
+<label for="quantity2">Quantity (between 1 and 10):</label>
+<input type="range" id="quantity2" min="1" max="10" value="1">
+
+<input type="button" id="button2" class="button" value= " Draw! " onClick=' drawloop2();'>
+</div>
+
+</h2> 
+</body> 
+</html>

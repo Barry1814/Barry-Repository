@@ -1,0 +1,160 @@
+/*css file*/
+
+body {
+	background-color: #FFCA7A;
+	font-family:Geneva,Arial,Helvetica,sans-serif;
+	background-image: -webkit-linear-gradient(top right, #FFFFFF 0%, #FFCA7A 30%, #870000 100%);
+}
+
+header {
+	background-color: #FFFAD9;
+	display:block;
+	text-align:center;
+	border-radius: 10px; 
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px; 
+	border: 2px solid #870000;
+	overflow: hidden;
+}
+
+header h2 {
+        font-size: 24px;
+		margin: 0px;
+		background-image: -webkit-radial-gradient(center bottom, ellipse farthest-corner, #FFFFFF 0%, #FFFAD9 25%, #FFCA7A 75%);
+
+}
+
+header h1 {
+        font-size: 42px;
+		margin: 0px;
+		text-shadow: 2px 2px 5px #800000;
+		background-image: -webkit-radial-gradient(center top, ellipse farthest-corner, #FFFFFF 0%, #FFFAD9 25%, #FFCA7A 75%);
+		overflow: hidden;
+}
+footer {
+	clear: both;	
+	display: block;
+	background-color: beige;
+	color:#FFCA7A;
+	text-align:center;
+	padding: 15px;
+	border-radius: 10px; 
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px; 
+	border: 2px solid #870000;
+	background-image: -webkit-radial-gradient(center bottom, ellipse farthest-side, #FFFFFF 0%, #FFFAD9 10%, #FFCA7A 85%);
+}
+
+footer h2 {
+	font-size: 28px;
+	color: black;
+	text-shadow: 2px 2px 5px #800000;
+
+}
+
+h2 {
+	font-size: 24px;
+	text-align:center;
+	color: #870000;
+}
+
+h3 {
+	font-size: 18px;
+	text-align:center;
+	color: #000000;
+	border-radius: 5px; 
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px; 
+	border: 2px solid #870000;
+	background-color: #FFFAD9;
+	text-shadow: 2px 2px 5px #800000;
+
+}
+
+nav {
+	display:block;
+	width:30%;
+	float:left;
+}
+
+nav a {
+	display: block;
+	border-bottom: 2px solid #870000;
+	padding: 10px;
+	text-decoration: none;
+	font-weight: bold;
+	margin: 15px;
+	color: #0000EE;
+}
+
+nav a:visited {
+	display: block;
+	border-bottom: 2px solid #870000;
+	padding: 10px;
+	text-decoration: none;
+	font-weight: bold;
+	margin: 15px;
+	color: #663366;
+}
+nav a:hover {
+	text-decoration: none;
+	color: #00FFFF;
+	background-color: none;
+}
+
+nav h3 {
+	margin: 15px;
+	background-image: -webkit-radial-gradient(center top, ellipse farthest-side, #FFFFFF 0%, #FFFAD9 10%, #FFCA7A 85%);
+}
+
+video {
+	width: 90%
+}
+
+section {
+	display:block;
+	width:65%;
+	float:left;
+	text-align: center;
+}
+section h1 {
+    font-size: 24px;
+	text-align:center;
+	color: #ff0000;
+}
+
+article {
+	display:block;
+	margin: 10px;
+	padding: 10px;
+	background-color: none;
+}
+
+article header {
+        color:black;
+	padding: 0px;
+	overflow: hidden;
+}
+
+
+article h1 {
+	font-size: 18px;
+        color:black;
+
+}
+
+/* Page adapts to the small screens of smart phones! */
+
+@media (max-width: 568px) {
+  nav {
+    float: none;
+    width: 100%;
+    min-height: 0em;
+  }
+
+  section {
+    float: none;
+    width: 100%;
+  }
+ }
+	
